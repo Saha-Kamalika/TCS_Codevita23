@@ -3,7 +3,7 @@ import java.util.*;
 class Consecutive_primeSum{
     public static boolean isPrime(int n){
         if(n<2) return false;
-        for(int i=2;i<=n/2;i++){
+        for(int i=2;i*i<=n;i++){
             if(n%i==0) return false;
         }
         return true;
@@ -27,6 +27,6 @@ class Consecutive_primeSum{
             }
         }
         System.out.println();
-        System.out.println("count is: "count);
+        System.out.println("count is: "+count);
     }
 }
